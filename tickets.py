@@ -18,6 +18,7 @@ class Ticket:
         self.status = status
         self.created_at = created_at if created_at else datetime.now()
         self.username = username
+        self.assigned_to = assigned_to
 
     def update_status(self, new_status):
         self.status = new_status
