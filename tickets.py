@@ -10,7 +10,8 @@ class Ticket:
         description,
         status='Open',
         created_at=None,
-        username=None
+        username=None,
+        assigned_to=None
     ):
         self.ticket_id = ticket_id
         self.title = title
@@ -82,10 +83,3 @@ def print_ticket(ticket):
     print(f"Status: {ticket.status}")
     print(f"Created At: {ticket.created_at}")
     print(f"Username: {ticket.username}")
-
-
-# Create a ticket
-ticket1 = create_ticket()
-
-# Display the ticket
-print_ticket(ticket1)
